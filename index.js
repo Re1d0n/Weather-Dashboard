@@ -1,4 +1,4 @@
-let apiKey = b3b997158834d4aa5a92e5196a4eba68;
+let apiKey = "b3b997158834d4aa5a92e5196a4eba68";
 let searchPress = document.getElementById("search-button");
 let classExample = document.querySelectorAll(".btn");
 let userInput = document.querySelector("input");
