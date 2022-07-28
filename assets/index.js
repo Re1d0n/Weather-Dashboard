@@ -41,17 +41,17 @@ function currentWeatherData(latitude, longitude){
       console.log(data.current.uvi)
       console.log(data.current.wind_speed);
       const today = document.getElementById("day0")
-      const tempature = document.createElement("h1")
-      const moistLevel = document.createElement("h1")
-      const speedOfWind = document.createElement("h1")
-      const sunburnScale = document.createElement("h1")
-      tempature.textContent = `${data.current.temp} F`
+      const temp = document.createElement("p")
+      const moistLevel = document.createElement("p")
+      const speedOfWind = document.createElement("p")
+      const sunburnScale = document.createElement("p")
+      temp.textContent = `${data.current.temp} F`
       moistLevel.textContent =`humidity: ${data.current.humidity}%` 
       speedOfWind.textContent =`${data.current.wind_speed} MPH`
       sunburnScale.textContent =`UV: ${data.current.uvi}`
 
 
-      today.appendChild(tempature)
+      today.appendChild(temp)
       today.appendChild(moistLevel)
       today.appendChild(speedOfWind)
       today.appendChild(sunburnScale)
@@ -88,14 +88,6 @@ function currentWeatherData(latitude, longitude){
          }
 
 
-
-    // let day1 =document.getElementById("day1")
-    // let day2 =document.getElementById("day2")
-    // let day3 =document.getElementById("day3")
-    // let day4 =document.getElementById("day4")
-    // let day5 =document.getElementById("day5")
-
-
          
       }
    
@@ -108,12 +100,12 @@ function currentWeatherData(latitude, longitude){
 function handleArray (array) {
     for(let i=0; i<5;i++){
         
-            let fiveDay =document.getElementById(`day${i+1}`)
-            let timeFuture = document.createElement(`h${i+1}`)
-            let description = document.createElement(`h${i+1}`)
-            let tempDays = document.createElement(`h${i+1}`)
-            let humiditys = document.createElement(`h${i+1}`)
-            let windys = document.createElement(`h${i+1}`)
+            let fiveDay =document.getElementById(`p${i}`)
+            let timeFuture = document.createElement(`p${i}`)
+            let description = document.createElement(`p${i}`)
+            let tempDays = document.createElement(`p${i}`)
+            let humiditys = document.createElement(`p${i}`)
+            let windys = document.createElement(`p${i}`)
             timeFuture.textContent = array[i].dt_txt
             description.textContent = array[i].weather[0].description
             tempDays.textContent = array[i].main.temp
