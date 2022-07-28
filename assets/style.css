@@ -1,6 +1,52 @@
+#day0 {
+    width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  float: left;
+}
+
 #day1 {
-    
-    
+    width: 300px;
+  border: 15px solid yellow;
+  padding: 50px;
+  margin: 20px;
+  float: left;
+}
+
+#day2 {
+    width: 300px;
+  border: 15px solid blue;
+  padding: 50px;
+  margin: 20px;
+  float: left;
+}
+
+
+#day3 {
+    width: 300px;
+  border: 15px solid orange;
+  padding: 50px;
+  margin: 20px;
+  float: left;
+}
+
+
+#day4 {
+    width: 300px;
+  border: 15px solid red;
+  padding: 50px;
+  margin: 20px;
+  float: left;
+}
+
+
+#day5 {
+    width: 300px;
+  border: 15px solid purple;
+  padding: 50px;
+  margin: 20px;
+  float: left;
 }
 
 
